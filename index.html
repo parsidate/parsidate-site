@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8"><meta http-equiv="Content-Security-Policy"
+content="default-src 'self';font-src &#x27;self&#x27; data:;img-src &#x27;self&#x27; https:&#x2F;&#x2F;* data:;media-src &#x27;self&#x27;;style-src &#x27;self&#x27;;frame-src player.vimeo.com https:&#x2F;&#x2F;www.youtube-nocookie.com;connect-src 'self';script-src 'self' 'self'">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https://parsidate.venv.ir">
+
+    
+    <title>
+ParsiDate - Comprehensive Persian Calendar Date & Time for Rust</title>
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+        
+            <link rel="stylesheet" href="https://parsidate.venv.ir/custom_subset.css?h=ffa90bf9a2649dfbcdbd">
+        
+    
+
+    
+        <link rel="stylesheet" href="https://parsidate.venv.ir/main.css?h=fe8c9607d92b0cda0f8f" />
+
+    <meta name="color-scheme" content="light dark" />
+        <meta name="description" content="Powerful Persian (Jalali&#x2F;Shamsi) Date &amp; Time Library for Rust" />
+        <meta property="og:description" content="Powerful Persian (Jalali&#x2F;Shamsi) Date &amp; Time Library for Rust" />
+
+    
+
+    <meta property="og:title" content="ParsiDate - Comprehensive Persian Calendar Date &amp; Time for Rust" />
+    <meta property="og:type" content="article" />
+
+    
+<meta property="og:locale" content="en_GB" />
+
+    <meta property="og:url" content="https:&#x2F;&#x2F;parsidate.venv.ir&#x2F;" /><meta property="og:site_name" content="ParsiDate - Comprehensive Persian Calendar Date &amp; Time for Rust">
+        <noscript><link rel="stylesheet" href="https://parsidate.venv.ir/no_js.css"/></noscript>
+        <script type="text/javascript" src="https://parsidate.venv.ir/js/initializeTheme.min.js"></script>
+        <script defer src="https://parsidate.venv.ir/js/themeSwitcher.min.js"></script>
+    
+</head>
+
+
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="nav-title">
+            <a class="home-title" href="https://parsidate.venv.ir">ParsiDate - Comprehensive Persian Calendar Date &amp; Time for Rust</a>
+        </div>
+            <div class="nav-navs">
+                <ul>
+                        
+                            <li>
+                                <a class="nav-links no-hover-padding" href="https://parsidate.venv.ir/blog/">blog
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a class="nav-links no-hover-padding" href="https://parsidate.venv.ir/archive/">archive
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a class="nav-links no-hover-padding" href="https://parsidate.venv.ir/tags/">tags
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a class="nav-links no-hover-padding" href="https://parsidate.venv.ir/projects/">projects
+                                </a>
+                            </li>
+                        <li class="menu-icons-container">
+                        <ul class="menu-icons-group">
+                            
+
+                            
+                            
+
+                            <li class="theme-switcher-wrapper js"><div
+        title="Toggle dark&#x2F;light mode"
+        class="theme-switcher"
+        tabindex="0"
+        role="button"
+        aria-label="Toggle dark mode"
+        aria-pressed="false">
+    </div><div
+        title="Reset mode to default"
+        class="theme-resetter arrow"
+        tabindex="0"
+        role="button"
+        aria-hidden="true"
+        aria-label="Reset mode to default">
+    </div>
+
+</li>
+</ul>
+                    </li>
+                </ul>
+            </div>
+        
+    </nav>
+</header>
+
+    <div class="content">
+
+        
+        
+
+
+
+<main >
+
+
+
+<div class="h-card hidden">
+  <div><span class="p-name" rel="me"></span>
+
+    
+  </div>
+
+  
+
+  
+  <div><span>
+      <a class="u-url u-id" href="https:&#x2F;&#x2F;parsidate.venv.ir">homepage</a>
+    </span> -
+  </div>
+
+  
+  
+  
+    
+  
+    
+  
+  
+
+  </div>
+
+<section>
+    <h1 id="calendar-spiral-parsidate-persian-date-time-for-rust">🗓️ ParsiDate: Persian Date &amp; Time for Rust<a class="header-anchor no-hover-padding" href="#calendar-spiral-parsidate-persian-date-time-for-rust" aria-label="Anchor link for: calendar-spiral-parsidate-persian-date-time-for-rust"><span class="link-icon" aria-hidden="true"></span></a>
+</h1>
+<p>Welcome to <strong>ParsiDate</strong>, a comprehensive and fully-featured Rust library for working with the <strong>Persian calendar system</strong> (a.k.a. Jalali or Shamsi).</p>
+<p>If you're building software for Persian users, need precise date-time handling in Rust, or just want full control over calendar math, formatting, and timezones — you're in the right place.</p>
+<hr />
+<h2 id="sparkles-why-parsidate">✨ Why ParsiDate?<a class="header-anchor no-hover-padding" href="#sparkles-why-parsidate" aria-label="Anchor link for: sparkles-why-parsidate"><span class="link-icon" aria-hidden="true"></span></a>
+</h2>
+<ul>
+<li>✅ <strong>100% Pure Rust</strong> – Zero unsafe, zero runtime deps (except optional <code>chrono-tz</code>)</li>
+<li>📦 <strong>Well-Integrated</strong> – Designed to interoperate seamlessly with <a href="https://docs.rs/chrono"><code>chrono</code></a></li>
+<li>🧠 <strong>Smart API Design</strong> – Type-safe, clear method names, helpful error handling</li>
+<li>🗓️ <strong>Jalali Calendar First</strong> – Handles leap years, DST, and cultural nuances natively</li>
+<li>🔧 <strong>Feature Flags</strong> – Keep it light or load it full: your call</li>
+</ul>
+<hr />
+<h2 id="mag-overview">🔍 Overview<a class="header-anchor no-hover-padding" href="#mag-overview" aria-label="Anchor link for: mag-overview"><span class="link-icon" aria-hidden="true"></span></a>
+</h2>
+<p>ParsiDate provides 3 core types:</p>
+<table><thead><tr><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>ParsiDate</code></td><td>A naive date (year, month, day) — no time or timezone</td></tr>
+<tr><td><code>ParsiDateTime</code></td><td>A naive date &amp; time — no timezone</td></tr>
+<tr><td><code>ZonedParsiDateTime</code></td><td>Timezone-aware datetime using <code>chrono-tz</code> (optional)</td></tr>
+</tbody></table>
+<p>All types support:</p>
+<ul>
+<li>✔️ Construction &amp; validation</li>
+<li>🔄 Conversion to/from Gregorian (<code>chrono</code>)</li>
+<li>🧾 Formatting with Persian names</li>
+<li>🔍 Parsing from strings</li>
+<li>⏱ Arithmetic (add/sub days, months, years, durations)</li>
+<li>📅 Extras: weekday, week number, season, ordinal day</li>
+<li>🧰 Helpers: <code>with_hour</code>, <code>end_of_month</code>, <code>is_leap_year</code>, etc.</li>
+</ul>
+<hr />
+<h2 id="package-installation">📦 Installation<a class="header-anchor no-hover-padding" href="#package-installation" aria-label="Anchor link for: package-installation"><span class="link-icon" aria-hidden="true"></span></a>
+</h2>
+<p>Add this to your <code>Cargo.toml</code>:</p>
+<pre data-lang="toml" style="background-color:#2b303b;color:#c0c5ce;" class="language-toml "><code class="language-toml" data-lang="toml"><span>[dependencies]
+</span><span style="color:#bf616a;">parsidate </span><span>= &quot;</span><span style="color:#a3be8c;">1.7.0</span><span>&quot;
+</span><span style="color:#bf616a;">chrono </span><span>= &quot;</span><span style="color:#a3be8c;">0.4</span><span>&quot;
+</span></code></pre>
+<p>Optional features:</p>
+<pre data-lang="toml" style="background-color:#2b303b;color:#c0c5ce;" class="language-toml "><code class="language-toml" data-lang="toml"><span style="color:#bf616a;">parsidate </span><span>= { </span><span style="color:#bf616a;">version </span><span>= &quot;</span><span style="color:#a3be8c;">1.7.0</span><span>&quot;, </span><span style="color:#bf616a;">features </span><span>= [&quot;</span><span style="color:#a3be8c;">serde</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">timezone</span><span>&quot;] }
+</span><span style="color:#bf616a;">chrono-tz </span><span>= &quot;</span><span style="color:#a3be8c;">0.8</span><span>&quot;
+</span></code></pre>
+<p>Want it all?</p>
+<pre data-lang="toml" style="background-color:#2b303b;color:#c0c5ce;" class="language-toml "><code class="language-toml" data-lang="toml"><span style="color:#bf616a;">parsidate </span><span>= { </span><span style="color:#bf616a;">version </span><span>= &quot;</span><span style="color:#a3be8c;">1.7.0</span><span>&quot;, </span><span style="color:#bf616a;">features </span><span>= [&quot;</span><span style="color:#a3be8c;">full</span><span>&quot;] }
+</span></code></pre>
+<hr />
+<h2 id="rocket-quick-usage">🚀 Quick Usage<a class="header-anchor no-hover-padding" href="#rocket-quick-usage" aria-label="Anchor link for: rocket-quick-usage"><span class="link-icon" aria-hidden="true"></span></a>
+</h2>
+<pre data-lang="rust" style="background-color:#2b303b;color:#c0c5ce;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#b48ead;">use </span><span>parsidate::ParsiDate;
+</span><span style="color:#b48ead;">let</span><span> pd = ParsiDate::new(</span><span style="color:#d08770;">1403</span><span>, </span><span style="color:#d08770;">5</span><span>, </span><span style="color:#d08770;">2</span><span>).</span><span style="color:#96b5b4;">unwrap</span><span>();
+</span><span>println!(&quot;</span><span style="color:#d08770;">{}</span><span>&quot;, pd.</span><span style="color:#96b5b4;">format</span><span>(&quot;</span><span style="color:#a3be8c;">%d %B %Y</span><span>&quot;)); </span><span style="color:#65737e;">// 02 مرداد 1403
+</span></code></pre>
+<pre data-lang="rust" style="background-color:#2b303b;color:#c0c5ce;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#b48ead;">use </span><span>parsidate::ParsiDateTime;
+</span><span style="color:#b48ead;">let</span><span> dt = ParsiDateTime::new(</span><span style="color:#d08770;">1403</span><span>, </span><span style="color:#d08770;">5</span><span>, </span><span style="color:#d08770;">2</span><span>, </span><span style="color:#d08770;">15</span><span>, </span><span style="color:#d08770;">30</span><span>, </span><span style="color:#d08770;">0</span><span>).</span><span style="color:#96b5b4;">unwrap</span><span>();
+</span><span>println!(&quot;</span><span style="color:#d08770;">{}</span><span>&quot;, dt.</span><span style="color:#96b5b4;">format</span><span>(&quot;</span><span style="color:#a3be8c;">%Y/%m/%d %T</span><span>&quot;));
+</span></code></pre>
+<pre data-lang="rust" style="background-color:#2b303b;color:#c0c5ce;" class="language-rust "><code class="language-rust" data-lang="rust"><span>#[</span><span style="color:#bf616a;">cfg</span><span>(feature = &quot;</span><span style="color:#a3be8c;">timezone</span><span>&quot;)]
+</span><span>{
+</span><span>    </span><span style="color:#b48ead;">use </span><span>parsidate::ZonedParsiDateTime;
+</span><span>    </span><span style="color:#b48ead;">use </span><span>chrono_tz::Asia::Tehran;
+</span><span>    </span><span style="color:#b48ead;">let</span><span> zoned = ZonedParsiDateTime::now(Tehran);
+</span><span>    println!(&quot;</span><span style="color:#a3be8c;">Current Tehran time: </span><span style="color:#d08770;">{}</span><span>&quot;, zoned);
+</span><span>}
+</span></code></pre>
+<hr />
+<h2 id="globe-with-meridians-formatting-specifiers">🌐 Formatting Specifiers<a class="header-anchor no-hover-padding" href="#globe-with-meridians-formatting-specifiers" aria-label="Anchor link for: globe-with-meridians-formatting-specifiers"><span class="link-icon" aria-hidden="true"></span></a>
+</h2>
+<p>You can format and parse dates using a powerful strftime-style API, with support for Persian names:</p>
+<table><thead><tr><th>Specifier</th><th>Output</th></tr></thead><tbody>
+<tr><td><code>%Y</code></td><td>1403</td></tr>
+<tr><td><code>%m</code></td><td>05</td></tr>
+<tr><td><code>%d</code></td><td>02</td></tr>
+<tr><td><code>%B</code></td><td>مرداد</td></tr>
+<tr><td><code>%A</code></td><td>سه‌شنبه</td></tr>
+<tr><td><code>%K</code></td><td>تابستان</td></tr>
+<tr><td><code>%T</code></td><td>15:30:00</td></tr>
+<tr><td>...</td><td>and many more!</td></tr>
+</tbody></table>
+<hr />
+<h2 id="gear-error-handling">⚙️ Error Handling<a class="header-anchor no-hover-padding" href="#gear-error-handling" aria-label="Anchor link for: gear-error-handling"><span class="link-icon" aria-hidden="true"></span></a>
+</h2>
+<p>No silent failures. If something's wrong, we’ll tell you:</p>
+<pre data-lang="rust" style="background-color:#2b303b;color:#c0c5ce;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#b48ead;">use </span><span>parsidate::ParsiDate;
+</span><span style="color:#b48ead;">let</span><span> invalid = ParsiDate::new(</span><span style="color:#d08770;">1402</span><span>, </span><span style="color:#d08770;">12</span><span>, </span><span style="color:#d08770;">30</span><span>);
+</span><span>assert!(invalid.</span><span style="color:#96b5b4;">is_err</span><span>()); </span><span style="color:#65737e;">// Not a leap year!
+</span></code></pre>
+<p>You get precise error types: <code>InvalidDate</code>, <code>ParseError</code>, <code>ArithmeticOverflow</code>, etc.</p>
+<hr />
+<h2 id="test-tube-tested-maintained">🧪 Tested &amp; Maintained<a class="header-anchor no-hover-padding" href="#test-tube-tested-maintained" aria-label="Anchor link for: test-tube-tested-maintained"><span class="link-icon" aria-hidden="true"></span></a>
+</h2>
+<p>This crate is actively maintained and well-tested:</p>
+<p><a href="https://github.com/parsidate/ParsiDate/actions/workflows/Tests.yml"><img src="https://github.com/parsidate/ParsiDate/actions/workflows/Tests.yml/badge.svg" alt="Tests" /></a>
+<a href="https://github.com/parsidate/ParsiDate/actions/workflows/lint.yml"><img src="https://github.com/parsidate/ParsiDate/actions/workflows/lint.yml/badge.svg" alt="Lint" /></a>
+<img src="https://img.shields.io/badge/maintained-actively-green" alt="Maintenance" /></p>
+<hr />
+<h2 id="raised-hands-contributing">🙌 Contributing<a class="header-anchor no-hover-padding" href="#raised-hands-contributing" aria-label="Anchor link for: raised-hands-contributing"><span class="link-icon" aria-hidden="true"></span></a>
+</h2>
+<p>ParsiDate is open-source and community-friendly!<br />
+Issues, discussions, and pull requests are always welcome.</p>
+<p>Let’s build a world-class calendar library for Rust together.</p>
+<hr />
+<h2 id="page-facing-up-license">📄 License<a class="header-anchor no-hover-padding" href="#page-facing-up-license" aria-label="Anchor link for: page-facing-up-license"><span class="link-icon" aria-hidden="true"></span></a>
+</h2>
+<p>Licensed under the <a href="https://github.com/parsidate/parsidate/blob/master/LICENSE">Apache License, Version 2.0</a>.</p>
+
+</section>
+
+
+</main>
+
+
+    </div>
+    <footer>
+    <section>
+        <nav class="socials nav-navs">
+        </nav>
+
+        
+        <nav class="nav-navs">
+        </nav>
+
+        <div class="credits">
+            <small>
+                
+
+                
+                Powered by
+                <a rel="" 
+
+ href="https://www.getzola.org">Zola</a>
+                &amp;
+                <a rel="" 
+
+ href="https://github.com/welpo/tabi">tabi</a>
+
+                </small>
+        </div>
+    </section>
+
+    </footer>
+
+
+    
+    
+</body>
+
+</html>
